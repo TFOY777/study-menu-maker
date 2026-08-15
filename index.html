@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Menu Maker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>📚 Study Menu Maker</h1>
+
+    <p class="description">
+      今日の集中力に合わせて、勉強メニューを決めてみよう！
+    </p>
+
+    <h2>今日の集中力は？</h2>
+
+    <div class="buttons">
+      <button onclick="makeMenu('high')">🔥 やる気満々</button>
+      <button onclick="makeMenu('normal')">😊 まあまあ</button>
+      <button onclick="makeMenu('low')">😴 疲れている</button>
+    </div>
+
+    <div id="result">
+      <p>ボタンを押すと勉強メニューが表示されます。</p>
+    </div>
+
+    <button class="random-button" onclick="randomMenu()">
+      🎲 ランダムで決める
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
